@@ -49,3 +49,11 @@
     .enchente { background: #FF3333; }
     .incendio { background: #FF6600; }
     .tremor { background: #FF9900; }
+
+    @media (min-width: 600px) {}
+  
+    @media (min-width: 768px) {}
+    
+    @media (min-width: 992px) {}
+    
+    @media (min-width: 1300px) {}

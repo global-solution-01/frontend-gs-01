@@ -1,3 +1,21 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #3399FF;
+    color: white;
+  }
+
 /* Extra Small devices (<600px) */
 @media (max-width: 599px) {
     .abrigos-table th,
@@ -75,3 +93,11 @@
       font-size: 1.4rem;
     }
   }
+
+  @media (min-width: 600px) {}
+  
+  @media (min-width: 768px) {}
+  
+  @media (min-width: 992px) {}
+  
+  @media (min-width: 1300px) {}
