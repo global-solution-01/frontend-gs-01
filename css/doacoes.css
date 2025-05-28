@@ -1,0 +1,103 @@
+/* Importa o estilo base */
+@import url('style.css');
+
+/* Banner principal */
+.ajuda-banner {
+  background: linear-gradient(135deg, #3399FF 0%, #003366 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.ajuda-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.ajuda-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-destacado {
+  background-color: white;
+  color: #003366;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-destacado:hover {
+  background-color: #f2f2f2;
+}
+
+/* Cards */
+.cards-ajuda {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 0 1rem;
+}
+
+.card-ajuda {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card-ajuda:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.card-ajuda img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.card-ajuda h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.card-ajuda p {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #3399FF;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #287fcc;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
