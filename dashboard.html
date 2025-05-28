@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Global Solution 2025 - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <header>
+    <img src="imgs/logo-02.png" alt="Logo do Hospital das Clínicas" class="logo" />
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="monitoramento.html">Monitoramento</a>
+      <a href="chatbot.html">Chatbot</a>
+      <a href="dashboard.html" aria-current="page">Dashboard</a>
+      <a href="recursos-abrigos.html">Recursos e Abrigos</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contato.html">Contato</a>
+      <a href="integrantes.html">Integrantes</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="dashboard-container" role="main" aria-label="Dashboard para equipes de resgate e autoridades">
+      <h2>Dashboard de Gestão em Eventos Extremos</h2>
+
+      <div class="stats" aria-label="Estatísticas principais">
+        <div class="stat-card" tabindex="0">
+          <h3>Eventos Ativos</h3>
+          <p id="eventos-ativos">3</p>
+        </div>
+        <div class="stat-card" tabindex="0">
+          <h3>Abrigos Disponíveis</h3>
+          <p id="abrigos-disponiveis">12</p>
+        </div>
+        <div class="stat-card" tabindex="0">
+          <h3>Equipes de Resgate</h3>
+          <p id="equipes-resgate">5</p>
+        </div>
+      </div>
+
+      <section aria-label="Gráfico de eventos por tipo">
+        <canvas id="eventsChart" role="img" aria-label="Gráfico de barras mostrando eventos por tipo"></canvas>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Global Solution FIAP - Todos os direitos reservados.
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Gráfico simples em JS puro usando canvas
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const canvas = document.getElementById('eventsChart');
+      const ctx = canvas.getContext('2d');
+
+      // Ajustar tamanho do canvas
+      canvas.width = canvas.clientWidth;
+      canvas.height = 300;
+
+      // Dados simulados
+      const labels = ['Enchentes', 'Incêndios', 'Tremores', 'Ventos Fortes'];
+      const data = [5, 3, 2, 4];
+      const colors = ['#FF3333', '#FF6600', '#FF9900', '#3399FF'];
+
+      // Dimensões
+      const padding = 40;
+      const barWidth = (canvas.width - padding * 2) / data.length - 20;
+      const maxData = Math.max(...data);
+      const scale = (canvas.height - padding * 2) / maxData;
+
+      // Limpar canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Desenhar eixos
+      ctx.strokeStyle = '#003366';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(padding, padding);
+      ctx.lineTo(padding, canvas.height - padding);
+      ctx.lineTo(canvas.width - padding, canvas.height - padding);
+      ctx.stroke();
+
+      // Desenhar barras
+      data.forEach((value, i) => {
+        const x = padding + i * (barWidth + 20) + 10;
+        const y = canvas.height - padding - value * scale;
+        ctx.fillStyle = colors[i];
+        ctx.fillRect(x, y, barWidth, value * scale);
+
+        // Rótulo valor
+        ctx.fillStyle = '#003366';
+        ctx.font = '14px Segoe UI';
+        ctx.textAlign = 'center';
+        ctx.fillText(value, x + barWidth / 2, y - 5);
+
+        // Rótulo categoria
+        ctx.fillText(labels[i], x + barWidth / 2, canvas.height - padding + 20);
+      });
+    });
+  </script>
+</body>
+</html>

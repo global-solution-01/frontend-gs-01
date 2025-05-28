@@ -1,0 +1,77 @@
+/* Extra Small devices (<600px) */
+@media (max-width: 599px) {
+    .abrigos-table th,
+    .abrigos-table td {
+      font-size: 0.75rem;
+      padding: 0.5rem;
+    }
+    .recursos-list {
+      padding: 1rem;
+    }
+    .recursos-list h3 {
+      font-size: 1rem;
+    }
+    .recursos-list ul {
+      margin-left: 1rem;
+    }
+  }
+  
+  /* Small devices (600px–767px) */
+  @media (min-width: 600px) and (max-width: 767px) {
+    .abrigos-table th,
+    .abrigos-table td {
+      font-size: 0.8rem;
+      padding: 0.6rem;
+    }
+    .recursos-list {
+      padding: 1.25rem;
+    }
+    .recursos-list h3 {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Medium devices (768px–991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .abrigos-table th,
+    .abrigos-table td {
+      font-size: 0.9rem;
+      padding: 0.7rem;
+    }
+    .recursos-list {
+      padding: 1.5rem;
+    }
+    .recursos-list h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Large devices (992px–1299px) */
+  @media (min-width: 992px) and (max-width: 1299px) {
+    .abrigos-table th,
+    .abrigos-table td {
+      font-size: 1rem;
+      padding: 0.75rem;
+    }
+    .recursos-list {
+      padding: 1.75rem;
+    }
+    .recursos-list h3 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Extra-Large devices (1300px and up) */
+  @media (min-width: 1300px) {
+    .abrigos-table th,
+    .abrigos-table td {
+      font-size: 1.05rem;
+      padding: 0.9rem;
+    }
+    .recursos-list {
+      padding: 2rem;
+    }
+    .recursos-list h3 {
+      font-size: 1.4rem;
+    }
+  }
