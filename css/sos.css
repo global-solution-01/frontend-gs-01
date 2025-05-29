@@ -53,6 +53,7 @@
     max-width: 20rem;
     text-align: center;
     transition: transform 0.3s;
+    margin: auto;
   }
   
   .card-doacao:hover {
