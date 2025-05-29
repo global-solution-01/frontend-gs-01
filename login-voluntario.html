@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ajuda RS - Global Solution</title>
+  <link rel="stylesheet" href="css/doacoes.css" />
+  <link rel="stylesheet" href="css/cadastrar-voluntario.css" />
+</head>
+<body>
+  <header>
+    <img src="imgs/logo-02.png" alt="Logo do Hospital das Clínicas" class="logo" />
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="monitoramento.html">Monitoramento</a>
+      <a href="chatbot.html">Chatbot</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="recursos-abrigos.html">Recursos e Abrigos</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contato.html">Contato</a>
+      <a href="integrantes.html">Integrantes</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Seção de Login -->
+    <section class="cadastro-section">
+        <h2>Cadastro de Voluntário</h2>
+        <form id="cadastro-form" class="cadastro-form">
+          <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+          </div>
+          <div class="form-group">
+            <label for="email-cadastro">Email:</label>
+            <input type="email" id="email-cadastro" name="email-cadastro" placeholder="Digite seu email" required />
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required />
+          </div>
+          <div class="form-group">
+            <label for="senha-cadastro">Senha:</label>
+            <input type="password" id="senha-cadastro" name="senha-cadastro" placeholder="Crie uma senha" required />
+          </div>
+          <button type="submit" class="btn-cadastrar">Cadastrar</button>
+        </form>
+        <p id="mensagem-sucesso" style="color: green; display: none;">Cadastro realizado com sucesso!</p>
+      </section>
+
+  </main>
+  <script src="js/cadastrar-voluntario.js"></script>
+  <footer>
+    &copy; 2025 Global Solution FIAP - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
