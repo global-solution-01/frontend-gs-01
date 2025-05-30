@@ -130,6 +130,7 @@ footer {
     text-align: center;
     transition: transform 0.3s;
     margin: auto;
+    height: 100%;
 }
   
 .card-doacao:hover {
