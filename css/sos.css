@@ -32,68 +32,6 @@
     margin-top: 4rem;
   }
   
-  /* Container dos cards */
-  .doacao-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 3rem auto;
-    padding: 0 2rem;
-    max-width: 90%;
-  }
-  
-  /* Card */
-  .card-doacao {
-    background: white;
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 20rem;
-    text-align: center;
-    transition: transform 0.3s;
-    margin: auto;
-  }
-  
-  .card-doacao:hover {
-    transform: translateY(-0.5rem);
-  }
-  
-  .icone-doacao {
-    width: 5rem;
-    height: 5rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Título */
-  .card-doacao h3 {
-    color: #003366;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Texto */
-  .card-doacao p {
-    color: #333;
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Botão */
-  .btn-doacao {
-    background-color: #3399FF;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-doacao:hover {
-    background-color: #007BFF;
-  }
   
   /* Página de SOS */
   .sos-section {

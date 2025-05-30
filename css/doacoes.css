@@ -23,20 +23,6 @@
   margin-bottom: 2rem;
 }
 
-.btn-destacado {
-  background-color: white;
-  color: #003366;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn-destacado:hover {
-  background-color: #f2f2f2;
-}
-
 /* Cards */
 .cards-ajuda {
   display: grid;
