@@ -29,7 +29,7 @@ table {
 @media (max-width: 599px) {
     .abrigos-table th,
     .abrigos-table td {
-      font-size: 0.75rem;
+      font-size: 0.70rem;
       padding: 0.5rem;
     }
     .recursos-list {
@@ -102,11 +102,3 @@ table {
       font-size: 1.4rem;
     }
   }
-
-  @media (min-width: 600px) {}
-  
-  @media (min-width: 768px) {}
-  
-  @media (min-width: 992px) {}
-  
-  @media (min-width: 1300px) {}

@@ -1,78 +1,163 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+/* RESET BÁSICO E GERAL */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background-color: #F5F5F5;
+  color: #003366;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex-grow: 1;
+}
+
+/* PÁGINA SOS */
+.sos-section {
+  padding: 3rem 2rem;
+  max-width: 90%;
+  margin: auto;
+}
+
+.sos-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.sos-content h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.sos-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.sos-content ul li {
+  background: #f0f8ff;
+  border-left: 0.5rem solid #007BFF;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.sos-content p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.sos-content a.btn-doacao {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #3399FF;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.sos-content a.btn-doacao:hover {
+  background-color: #007BFF;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* ========================================
+   MEDIA QUERIES (sem alterar estética)
+======================================== */
+
+/* min-width: 600px - tablets pequenos */
+@media (max-width: 599px) {
   
-  /* Corpo da página */
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #003366;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #003366;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-    margin-top: 4rem;
-  }
-  
-  
-  /* Página de SOS */
   .sos-section {
-    padding: 3rem 2rem;
-    max-width: 90%;
-    margin: auto;
+    padding: 1.5rem 1rem;
   }
-  
+
   .sos-content {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
   }
-  
-  .sos-content h2 {
-    color: #003366;
-    margin-bottom: 1rem;
-  }
-  
-  .sos-content ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 2rem;
-  }
-  
+
   .sos-content ul li {
-    background: #f0f8ff;
-    border-left: 0.5rem solid #007BFF;
-    padding: 1rem 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
+    font-size: 0.95rem;
+    word-break: break-word; /* Força quebra de palavras grandes */
   }
-  
-  .sos-content p {
-    margin-bottom: 2rem;
+
+  .sos-content a {
+    word-break: break-all; /* Garante que links longos não vazem */
+    overflow-wrap: break-word;
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .sos-content p,
+  .sos-content h2,
+  .sos-content h3 {
     font-size: 1rem;
   }
-  
-  .sos-content a.btn-doacao {
-    display: inline-block;
-    padding: 1rem 2rem;
+}
+@media (min-width: 600px) {
+  main {
+    padding: 0 2rem;
   }
+
+  .sos-content {
+    padding: 2.5rem;
+  }
+}
+
+/* min-width: 768px - tablets grandes */
+@media (min-width: 768px) {
   
+  .sos-content ul li {
+    font-size: 1rem;
+  }
+
+  .sos-content p {
+    font-size: 1.05rem;
+  }
+}
+
+/* min-width: 992px - notebooks */
+@media (min-width: 992px) {
+  main {
+    max-width: 1000px;
+  }
+
+  .sos-content {
+    padding: 3rem;
+  }
+}
+
+/* min-width: 1300px - desktops grandes */
+@media (min-width: 1300px) {
+  main {
+    max-width: 1200px;
+  }
+
+  .sos-content {
+    padding: 3.5rem 4rem;
+  }
+
+  .sos-section {
+    max-width: 85%;
+  }
+}
