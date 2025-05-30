@@ -6,8 +6,8 @@
 }
 
 .logo {
-  width: 10vw;
-  height: 16vh;
+  width: 8rem;
+  height: 8rem;
 }
 
 body {
@@ -102,13 +102,12 @@ main {
   color: #3399FF;
   margin-bottom: 0.75rem;
 }
+
 .icone-doacao {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1.5rem;
+  
 }
 
 footer {
@@ -137,11 +136,6 @@ footer {
     transform: translateY(-0.5rem);
 }
   
-.icone-doacao {
-    width: 5rem;
-    height: 5rem;
-    margin-bottom: 1.5rem;
-}
   
   /* Título */
   .card-doacao h3 {
@@ -172,17 +166,80 @@ footer {
     background-color: #007BFF;
   }
 
-  /* Container dos cards */
-   .doacao-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 3rem auto;
-    padding: 0 2rem;
-    max-width: 90%;
+  @media (max-width: 599px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+  
+    nav a {
+      margin: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.6rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+      padding: 0 0.5rem;
+    }
+  
+    .features {
+      grid-template-columns: 1fr;
+    }
+  
+    .card-doacao {
+      width: 90%;
+      max-width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  
+    .logo {
+      width: 6rem;
+      height: 6rem;
+    }
   }
   
+  /* A partir de 600px */
+  @media (min-width: 600px) {
+    /* Nenhuma alteração visual, apenas garante consistência */
+  }
+  
+  /* A partir de 768px */
+  @media (min-width: 768px) {
+    /* Garante espaçamento um pouco mais amplo, sem alterar o visual */
+    nav a {
+      font-size: 1rem;
+    }
+  
+    .card-doacao {
+      max-width: 20rem;
+    }
+  }
+  
+  /* A partir de 992px */
+  @media (min-width: 992px) {
+    /* Mantém layout atual, sem alterações */
+  }
+  
+  /* A partir de 1300px */
+  @media (min-width: 1300px) {
+    /* Apenas centraliza melhor conteúdo */
+    main {
+      max-width: 1200px;
+    }
+  }
+
+
 /* Responsividade */
 @media (max-width: 600px) {
   header {

@@ -1,5 +1,4 @@
-/* Importa o estilo base */
-@import url('style.css');
+
 
 /* Banner principal */
 .ajuda-banner {
@@ -48,8 +47,8 @@
 }
 
 .card-ajuda img {
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  height: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -87,3 +86,124 @@ footer {
   font-size: 0.9rem;
   margin-top: auto;
 }
+
+@media (min-width: 600px) {
+  .ajuda-banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .ajuda-banner p {
+    font-size: 1.1rem;
+  }
+
+  .card-ajuda {
+    padding: 2rem;
+  }
+
+  .card-ajuda h2 {
+    font-size: 1.3rem;
+  }
+
+  .card-ajuda p {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 1rem 3rem;
+  }
+
+  nav a {
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
+
+  .ajuda-banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .ajuda-banner p {
+    font-size: 1.2rem;
+  }
+
+  .card-ajuda h2 {
+    font-size: 1.4rem;
+  }
+
+  .card-ajuda p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  nav a {
+    font-size: 1.05rem;
+  }
+
+  .cards-ajuda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-ajuda {
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  main {
+    max-width: 1100px;
+  }
+
+  .ajuda-banner {
+    max-width: 1100px;
+    padding: 5rem 3rem;
+  }
+
+  .ajuda-banner h1 {
+    font-size: 3rem;
+  }
+
+  .ajuda-banner p {
+    font-size: 1.4rem;
+  }
+
+  .cards-ajuda {
+    gap: 3rem;
+  }
+
+  .card-ajuda h2 {
+    font-size: 1.6rem;
+  }
+
+  .card-ajuda p {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .cards-ajuda {
+    grid-template-columns: 1fr; /* Uma única coluna */
+  }
+}
+
