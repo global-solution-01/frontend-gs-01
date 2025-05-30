@@ -15,6 +15,15 @@ table {
     background-color: #3399FF;
     color: white;
   }
+.disponivel {
+  color: green;
+}
+#lotado {
+  color: red;
+}
+#quase-lotado {
+  color: orange;
+}
 
 /* Extra Small devices (<600px) */
 @media (max-width: 599px) {
