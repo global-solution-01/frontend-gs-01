@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Global Solution 2025 - Chatbot</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    #chat-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      height: 500px;
+    }
+    #chat-log {
+      flex-grow: 1;
+      padding: 1rem;
+      overflow-y: auto;
+      border-bottom: 1px solid #ddd;
+    }
+    .message {
+      margin-bottom: 1rem;
+      max-width: 80%;
+      padding: 0.5rem 1rem;
+      border-radius: 15px;
+      clear: both;
+      font-size: 1rem;
+    }
+    .user-msg {
+      background-color: #3399FF;
+      color: white;
+      float: right;
+      text-align: right;
+    }
+    .bot-msg {
+      background-color: #e1e1e1;
+      color: #003366;
+      float: left;
+      text-align: left;
+    }
+    #chat-input-form {
+      display: flex;
+      padding: 0.5rem;
+    }
+    #chat-input {
+      flex-grow: 1;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    #chat-submit {
+      background-color: #3399FF;
+      border: none;
+      color: white;
+      padding: 0 1rem;
+      margin-left: 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+    #chat-submit:hover,
+    #chat-submit:focus {
+      background-color: #267acc;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="monitoramento.html">Monitoramento</a>
+      <a href="chatbot.html" aria-current="page">Chatbot</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="recursos-abrigos.html">Recursos e Abrigos</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contato.html">Contato</a>
+      <a href="integrantes.html">Integrantes</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Chatbot de Apoio em Eventos Extremos</h2>
+    <div id="chat-container" role="region" aria-live="polite" aria-label="Chatbot para orientação em desastres">
+      <div id="chat-log"></div>
+      <form id="chat-input-form" aria-label="Enviar mensagem para chatbot">
+        <input type="text" id="chat-input" autocomplete="off" placeholder="Digite sua mensagem..." aria-required="true" />
+        <button type="submit" id="chat-submit" aria-label="Enviar mensagem">Enviar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Global Solution FIAP - Todos os direitos reservados.
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Chatbot simples simulado em JS puro
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const chatLog = document.getElementById('chat-log');
+      const chatForm = document.getElementById('chat-input-form');
+      const chatInput = document.getElementById('chat-input');
+
+      // Mensagem inicial do bot
+      function botMessage(text) {
+        const msg = document.createElement('div');
+        msg.classList.add('message', 'bot-msg');
+        msg.textContent = text;
+        chatLog.appendChild(msg);
+        chatLog.scrollTop = chatLog.scrollHeight;
+      }
+
+      function userMessage(text) {
+        const msg = document.createElement('div');
+        msg.classList.add('message', 'user-msg');
+        msg.textContent = text;
+        chatLog.appendChild(msg);
+        chatLog.scrollTop = chatLog.scrollHeight;
+      }
+
+      // Respostas simples baseadas em palavras-chave
+      function getBotResponse(input) {
+        const text = input.toLowerCase();
+
+        if (text.includes('chuva') || text.includes('enchente')) {
+          return 'Em caso de chuvas intensas, evite áreas baixas e siga as rotas seguras indicadas no mapa.';
+        }
+        if (text.includes('calor') || text.includes('onda de calor')) {
+          return 'Para ondas de calor, mantenha-se hidratado e evite exposição direta ao sol nas horas mais quentes.';
+        }
+        if (text.includes('frio') || text.includes('frio extremo')) {
+          return 'Em frio extremo, use roupas adequadas e procure abrigos aquecidos.';
+        }
+        if (text.includes('vento') || text.includes('vento forte')) {
+          return 'Durante ventos fortes, mantenha-se longe de árvores e estruturas instáveis.';
+        }
+        if (text.includes('tremor') || text.includes('terremoto')) {
+          return 'Em caso de tremores, proteja-se embaixo de móveis resistentes e evite janelas.';
+        }
+        if (text.includes('ajuda') || text.includes('socorro')) {
+          return 'Se precisar de ajuda, ligue para os serviços de emergência locais e informe sua localização.';
+        }
+        if (text.includes('olá') || text.includes('oi')) {
+          return 'Olá! Como posso ajudar você a se preparar para eventos extremos?';
+        }
+        return 'Desculpe, não entendi. Por favor, tente perguntar sobre chuvas, calor, frio, vento ou tremores.';
+      }
+
+      botMessage('Olá! Sou o assistente virtual para eventos extremos. Pergunte-me algo.');
+
+      chatForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const userText = chatInput.value.trim();
+        if (!userText) return;
+        userMessage(userText);
+        chatInput.value = '';
+        setTimeout(() => {
+          botMessage(getBotResponse(userText));
+        }, 600);
+      });
+    });
+  </script>
+</body>
+</html>
