@@ -210,52 +210,112 @@ footer {
     }
   }
   
-  /* A partir de 600px */
-  @media (min-width: 600px) {
-    /* Nenhuma alteração visual, apenas garante consistência */
-  }
-  
-  /* A partir de 768px */
-  @media (min-width: 768px) {
-    /* Garante espaçamento um pouco mais amplo, sem alterar o visual */
-    nav a {
-      font-size: 1rem;
-    }
-  
-    .card-doacao {
-      max-width: 20rem;
-    }
-  }
-  
-  /* A partir de 992px */
-  @media (min-width: 992px) {
-    /* Mantém layout atual, sem alterações */
-  }
-  
-  /* A partir de 1300px */
-  @media (min-width: 1300px) {
-    /* Apenas centraliza melhor conteúdo */
-    main {
-      max-width: 1200px;
-    }
+/* ===========================
+   RESPONSIVIDADE COM ESTÉTICA ORIGINAL
+=========================== */
+
+/* Celulares até 599px */
+@media (max-width: 599px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .card-doacao {
+    max-width: 90%;
+    margin-bottom: 2rem;
+  }
 
-/* Responsividade */
-@media (max-width: 600px) {
   header {
     flex-direction: column;
-    align-items: flex-start;
-  }
-  nav {
-    margin-top: 0.5rem;
-  }
-  nav a {
-    margin-left: 0;
-    margin-right: 1rem;
-  }
-  .hero h2 {
-    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
   }
 
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  nav a {
+    margin: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+/* min-width: 600px */
+@media (min-width: 600px) {
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* min-width: 768px */
+@media (min-width: 768px) {
+  nav a {
+    font-size: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
+
+/* min-width: 992px */
+@media (min-width: 992px) {
+  .features {
+    gap: 2rem;
+  }
+}
+
+/* min-width: 1300px */
+@media (min-width: 1300px) {
+  main {
+    max-width: 1100px;
+  }
+
+  .features {
+    gap: 2.5rem;
+  }
+
+  .card-doacao {
+    max-width: 22rem;
+  }
+}
+
+/* ========================
+   MEDIA QUERIES RESPONSIVAS
+   (sem alterar estética)
+======================== */
+
+@media (max-width: 599px) {
+  .features {
+    grid-template-columns: 1fr; /* Cards em coluna única */
+  }
+
+  .card-doacao {
+    margin: 0 auto 2rem auto; /* Centraliza e espaça verticalmente */
+    max-width: 100%; /* Ocupa toda a largura do grid */
+  }
 }
