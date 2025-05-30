@@ -7,7 +7,7 @@
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      background: #e1e1e1 url('https://upload.wikimedia.org/wikipedia/commons/8/88/BlankMap-World-noborders.png') center center/cover no-repeat;
+      background: #e1e1e1;
     }
     .marker {
       position: absolute;

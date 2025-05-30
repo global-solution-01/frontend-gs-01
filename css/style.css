@@ -102,29 +102,6 @@ main {
   color: #3399FF;
   margin-bottom: 0.75rem;
 }
-
-/* ======== NOVO CARD DE DOAÇÃO ======== */
-.doacao-card-section {
-  margin-bottom: 3rem;
-  display: flex;
-  justify-content: center;
-}
-
-.doacao-card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 2rem;
-  text-align: center;
-  max-width: 400px;
-  width: 100%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.3s;
-}
-
-.doacao-card:hover {
-  transform: translateY(-5px);
-}
-
 .icone-doacao {
   width: 60px;
   height: 60px;
@@ -132,38 +109,6 @@ main {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.doacao-card h3 {
-  color: #003366;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-}
-
-.doacao-card p {
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-  color: #333;
-}
-
-.doacao-button {
-  background-color: #3399FF;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.doacao-button a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.doacao-button:hover {
-  background-color: #267acc;
 }
 
 footer {
@@ -175,32 +120,69 @@ footer {
   margin-top: auto;
 }
 
-
-.icone-sos {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* Card */
+.card-doacao {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 20rem;
+    text-align: center;
+    transition: transform 0.3s;
+    margin: auto;
 }
-
-.sos-button {
-  background-color: #3399FF;
-color: white;
-border: none;
-padding: 0.75rem 1.5rem;
-border-radius: 8px;
-cursor: pointer;
-font-weight: bold;
-transition: background-color 0.3s;
+  
+.card-doacao:hover {
+    transform: translateY(-0.5rem);
 }
-
-.sos-button a {
-  text-decoration: none;
-  color: inherit;
+  
+.icone-doacao {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.5rem;
 }
+  
+  /* Título */
+  .card-doacao h3 {
+    color: #003366;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Texto */
+  .card-doacao p {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Botão */
+  .btn-doacao {
+    background-color: #3399FF;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-doacao:hover {
+    background-color: #007BFF;
+  }
 
+  /* Container dos cards */
+   .doacao-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    max-width: 90%;
+  }
+  
 /* Responsividade */
 @media (max-width: 600px) {
   header {
