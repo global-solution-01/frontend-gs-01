@@ -25,6 +25,29 @@ table {
   color: orange;
 }
 
+h3 {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 3.5%;
+  margin-bottom: 2%;
+}
+
+caption {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 2%;
+  font-weight: bold;
+  margin-left: 3%;
+}
+p {
+  text-indent: 2%;
+}
 
 @media (max-width: 599px) {
     .abrigos-table th,
