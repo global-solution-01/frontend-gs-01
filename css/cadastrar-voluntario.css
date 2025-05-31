@@ -17,7 +17,7 @@
   margin-bottom: 1rem;
 }
 
-/* Formulário */
+
 .cadastro-form {
   display: flex;
   flex-direction: column;
@@ -77,11 +77,11 @@ input:focus {
   background-color: #007BFF;
 }
 
-/* ==========================
-   MEDIA QUERIES RESPONSIVOS
-========================== */
+#mensagem-sucesso {
+  color: green; 
+  display: none;
+}
 
-/* Telas até 599px (celulares) */
 @media (max-width: 599px) {
   .cadastro-section {
     margin: 1rem;
@@ -103,14 +103,14 @@ input:focus {
   }
 }
 
-/* min-width: 600px - tablets pequenos */
+
 @media (min-width: 600px) {
   .cadastro-section {
     max-width: 420px;
   }
 }
 
-/* min-width: 768px - tablets médios/grandes */
+
 @media (min-width: 768px) {
   .cadastro-section h2 {
     font-size: 1.8rem;
@@ -121,14 +121,14 @@ input:focus {
   }
 }
 
-/* min-width: 992px - notebooks */
+
 @media (min-width: 992px) {
   .cadastro-section {
     max-width: 450px;
   }
 }
 
-/* min-width: 1300px - desktops grandes */
+
 @media (min-width: 1300px) {
   .cadastro-section {
     max-width: 500px;

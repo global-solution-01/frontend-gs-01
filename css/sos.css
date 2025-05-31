@@ -1,4 +1,4 @@
-/* RESET BÁSICO E GERAL */
+
 
 body {
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -19,7 +19,7 @@ main {
   flex-grow: 1;
 }
 
-/* PÁGINA SOS */
+
 .sos-section {
   padding: 3rem 2rem;
   max-width: 90%;
@@ -81,11 +81,7 @@ footer {
   margin-top: auto;
 }
 
-/* ========================================
-   MEDIA QUERIES (sem alterar estética)
-======================================== */
 
-/* min-width: 600px - tablets pequenos */
 @media (max-width: 599px) {
   
   .sos-section {
@@ -98,11 +94,11 @@ footer {
 
   .sos-content ul li {
     font-size: 0.95rem;
-    word-break: break-word; /* Força quebra de palavras grandes */
+    word-break: break-word; 
   }
 
   .sos-content a {
-    word-break: break-all; /* Garante que links longos não vazem */
+    word-break: break-all; 
     overflow-wrap: break-word;
     display: inline-block;
     max-width: 100%;
@@ -124,7 +120,7 @@ footer {
   }
 }
 
-/* min-width: 768px - tablets grandes */
+
 @media (min-width: 768px) {
   
   .sos-content ul li {
@@ -136,7 +132,7 @@ footer {
   }
 }
 
-/* min-width: 992px - notebooks */
+
 @media (min-width: 992px) {
   main {
     max-width: 1000px;
@@ -147,7 +143,7 @@ footer {
   }
 }
 
-/* min-width: 1300px - desktops grandes */
+
 @media (min-width: 1300px) {
   main {
     max-width: 1200px;
