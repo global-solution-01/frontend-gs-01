@@ -1,43 +1,5 @@
-// Script para FAQ: abrir e fechar respostas
-document.addEventListener('DOMContentLoaded', () => {
-    const questions = document.querySelectorAll('.faq-question');
-    questions.forEach(q => {
-      q.addEventListener('click', () => {
-        q.classList.toggle('active');
-        const answer = q.nextElementSibling;
-        if (answer.style.display === 'block') {
-          answer.style.display = 'none';
-        } else {
-          answer.style.display = 'block';
-        }
-      });
-    });
-  
-    // Script para formulário contato
-    const form = document.getElementById('contact-form');
-    if (form) {
-      form.addEventListener('submit', e => {
-        e.preventDefault();
-        const nome = form.nome.value.trim();
-        const email = form.email.value.trim();
-        const mensagem = form.mensagem.value.trim();
-  
-        if (!nome || !email || !mensagem) {
-          alert('Por favor, preencha todos os campos.');
-          return;
-        }
-        // Validação simples de email
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-          alert('Por favor, insira um e-mail válido.');
-          return;
-        }
-  
-        alert('Mensagem enviada com sucesso! Obrigado pelo contato.');
-        form.reset();
-      });
-    }
-  });
+
+
   // Marcadores simulados: posição em porcentagem (left, top) relativa ao container
   const markers = [
     {

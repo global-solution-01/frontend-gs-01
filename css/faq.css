@@ -1,4 +1,4 @@
-/* Estilo base */
+
 .faq-item {
   background: #ffffff;
   padding: 1rem;
@@ -22,7 +22,7 @@
   padding: 1rem;
 }
 
-/* Reset responsivo para pequenas telas */
+
 @media (max-width: 599px) {
   .faq-item {
     padding: 1rem 0.8rem;
@@ -39,7 +39,7 @@
   }
 }
 
-/* @media (min-width: 600px) */
+
 @media (min-width: 600px) {
   .faq-lista {
     padding: 1rem;
@@ -54,7 +54,7 @@
   }
 }
 
-/* @media (min-width: 768px) */
+
 @media (min-width: 768px) {
   .faq-item h2 {
     font-size: 1.3rem;
@@ -65,7 +65,7 @@
   }
 }
 
-/* @media (min-width: 992px) */
+
 @media (min-width: 992px) {
   .faq-lista {
     padding: 2rem;
@@ -76,7 +76,7 @@
   }
 }
 
-/* @media (min-width: 1300px) */
+
 @media (min-width: 1300px) {
   .faq-lista {
     max-width: 1100px;

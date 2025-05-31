@@ -1,10 +1,8 @@
-/* ===========================
-   MAPA INTERATIVO RESPONSIVO
-=========================== */
+
 .map-container {
   width: 100%;
   max-width: 800px;
-  aspect-ratio: 2 / 1; /* mantém proporção visual */
+  aspect-ratio: 2 / 1; 
   margin: 2rem auto;
   position: relative;
   border-radius: 8px;
@@ -19,7 +17,7 @@
   object-fit: cover;
 }
 
-/* Marcadores */
+
 .marker {
   position: absolute;
   width: 28px;
@@ -33,7 +31,7 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   transition: transform 0.2s;
   font-size: 1.5rem;
-  transform: translate(-50%, -50%); /* garante centralização */
+  transform: translate(-50%, -50%); 
 }
 
 .marker:hover {
@@ -68,16 +66,14 @@ section h2 {
 section p {
   text-align: center;
 }
-/* Cores por tipo */
+
 .enchente { background: #FF3333; }
 .incendio { background: #FF6600; }
 .tremor   { background: #FF9900; }
 
-/* ===========================
-   MEDIA QUERIES
-=========================== */
+
 @media (max-width: 599px) {
-  
+
   .map-container {
     width: 95%;
   }
