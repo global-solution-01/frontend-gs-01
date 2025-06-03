@@ -4,7 +4,7 @@
 ## 💡 Sobre o Projeto:
 O projeto SOS Desastres Naturais foi idealizado com a missão de oferecer uma resposta rápida, acessível e centralizada para a população afetada por desastres climáticos extremos. Diante do aumento significativo na frequência de enchentes, queimadas, terremotos e outras catástrofes naturais — muitas vezes agravadas pela desinformação e pela falta de infraestrutura de resposta — esta plataforma se propõe a ser um canal confiável de apoio, informação e ação comunitária
 
-## Objetivo:
+## 📌 Objetivo:
 
 Nosso objetivo principal é salvar vidas e reduzir o impacto social e emocional desses eventos, conectando vítimas, voluntários, doadores e autoridades em um só ambiente digital. Por meio de ferramentas intuitivas e acessíveis, buscamos orientar a população sobre como agir em momentos de crise, onde buscar abrigo e auxílio, como contribuir com recursos e de que forma se engajar de maneira segura como voluntário.
 
