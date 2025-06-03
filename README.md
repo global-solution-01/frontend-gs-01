@@ -20,7 +20,7 @@ Nosso objetivo principal é salvar vidas e reduzir o impacto social e emocional 
 - 📩 **Formulário de Contato**: Permite ao usuário enviar dúvidas e comentários; valida os campos e retorna feedback.
 
 ## 🗂️ Estrutura de Pastas e Arquivos
-
+```
 📁 css/
 └── style.css # Estilo global - Página Inicial + Barra de Navegação
 └── cadastrar-voluntario.css # Estilização da página de cadastro de voluntários
@@ -52,7 +52,7 @@ Nosso objetivo principal é salvar vidas e reduzir o impacto social e emocional 
 └── faq.html # Perguntas frequentes
 └── contato.html # Formulário de contato
 └── integrantes.html # Quem somos
-
+```
 
 ## 💻 Tecnologias Utilizadas
 
