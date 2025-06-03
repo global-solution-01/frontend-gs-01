@@ -71,7 +71,7 @@
 - Pedro Henrique Costa — RM559932  
 - Júlia Menezes — RM565568  
 
-Grupo: Digital Squad
+🌐 Grupo: Digital Squad
 
 ---
 
