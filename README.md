@@ -22,40 +22,49 @@
 - 🏠 **Recursos e Abrigos**: Exibe recursos disponíveis (água, comida, higiene, etc.) e tabela com abrigos temporários, com capacidade, status e contatos.
 - 🤖 **Chatbot Integrado**: Assistente virtual já integrado que fornece informações sobre segurança, localização de abrigos, primeiros socorros e status das emergências.
 - 📩 **Formulário de Contato**: Permite ao usuário enviar dúvidas e comentários; valida os campos e retorna feedback.
+- ❓ **FAQ - Perguntas Frequentes**: Permite ao usuário tirar dúvidas através das perguntas e respostas mais frequentes na plataforma.
 
 ## 🗂️ Estrutura de Pastas e Arquivos
 ```
-📁 css/
-└── style.css # Estilo global - Página Inicial + Barra de Navegação
-└── cadastrar-voluntario.css # Estilização da página de cadastro de voluntários
-└── contato.css # Estilização da página de Contato
-└── faq.css # Estilização da página de FAQ - perguntas frequentes
-└── monitoramento.css # Estilização da página de Monitoramento 
-└── quero-doar.css # Estilização da página de Doações
-└── recursos-abrigos.css # Estilização da página de recursos e abrigos disponíveis
-└── sos.css # Estilização da página de como pedir ajuda
-└── integrantes.css # Estilização da página de Integrantes
-
-📁 imgs/
-└── [imagens utilizadas no site]
-
-📁 js/
-└── contato.js # Script de validação do formulário de contato
-└── chatbot.js # Script do chatbot integrado via webchat
-└── faq.js # Script de interação das perguntas e respostas do FAQ
-└── cadastrar-voluntario.js # Script de validação do cadastro de voluntários
-└── script.js # Script de marcação dos ícones do mapeamento das áreas afetadas
-
-📁 pages/
-└── index.html # Página inicial
-└── quero-doar.html # Página de doações
-└── sos.html # Página de como pedir socorro
-└── login-voluntario.html # Cadastro de voluntário
-└── monitoramento.html # Mapa de monitoramento em tempo real
-└── recursos-abrigos.html # Recursos e abrigos disponíveis
-└── faq.html # Perguntas frequentes
-└── contato.html # Formulário de contato
-└── integrantes.html # Quem somos
+├── index.html                   # Página inicial
+├── quero-doar.html              # Página de doações
+├── sos.html                     # Página de como pedir socorro
+├── login-voluntario.html        # Cadastro de voluntário
+├── monitoramento.html           # Mapa de monitoramento em tempo real
+├── recursos-abrigos.html        # Recursos e abrigos disponíveis
+├── faq.html                     # Perguntas Frequentes
+├── contato.html                 # Formulário de contato
+├── integrantes.html             # Informações da equipe
+├── 📁 css/                      # Estilização geral e responsividade
+│   └── style.css                # Estilo global - Página Inicial + Barra de Navegação
+│   └── cadastrar-voluntario.css # Estilização da página de cadastro de voluntários
+│   └── contato.css              # Estilização da página de Contato
+│   └── faq.css                  # Estilização da página de FAQ - perguntas frequentes
+│   └── monitoramento.css        # Estilização da página de Monitoramento 
+│   └── quero-doar.css           # Estilização da página de Doações
+│   └── recursos-abrigos.css     # Estilização da página de recursos e abrigos disponíveis
+│   └── sos.css                  # Estilização da página de como pedir ajuda
+│   └── integrantes.css          # Estilização da página de Integrantes
+├── 📁 js/                      # Imagens e ícones do projeto
+|   └── contato.js              # Script de validação do formulário de contato
+|   └── chatbot.js              # Script do chatbot integrado via webchat
+|   └── faq.js                  # Script de interação das perguntas e respostas do FAQ
+|   └── cadastrar-voluntario.js # Script de validação do cadastro de voluntários
+|   └── script.js               # Script de marcação dos ícones do mapeamento das áreas afetadas
+├── 📁 imgs/                   # Imagens e ícones do projeto
+│   ├── pedro.jpg              # Foto do integrante Pedro
+│   ├── julia.jfif             # Foto da integrante Julia
+│   ├── abrigo.png             # ícone de abrigo
+│   ├── chatbot-img.png        # ícone de chatbot
+│   ├── icone.png              # ícone de doação
+│   ├── logo-02.png            # logo do SOS Desastres Naturais
+│   ├── mapa-mundo-02.PNG      # imagem do mapa mundi
+│   ├── satelite.png           # ícone de satélite
+│   ├── sos.png                # ícone de SOS
+|   └── voluntario.png         # íconde de voluntariado
+├── 📁 favicons/               # Imagens e ícones do projeto
+|    └── favicon-01-16x16.png  # Ícone da logo do SOS Desastres Naturais
+└── README.md                  # Documentação do projeto
 ```
 
 ## 💻 Tecnologias Utilizadas
@@ -68,8 +77,8 @@
 
 ## 👥 Integrantes do Projeto
 
-- Pedro Henrique Costa — RM559932  
-- Júlia Menezes — RM565568  
+- Pedro Henrique Costa — RM559932 — Turma: 1TDSPV
+- Júlia Menezes — RM565568 — Turma: 1TDSPV
 
 🌐 Grupo: Digital Squad
 
