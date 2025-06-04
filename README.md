@@ -45,7 +45,7 @@
 │   └── recursos-abrigos.css     # Estilização da página de recursos e abrigos disponíveis
 │   └── sos.css                  # Estilização da página de como pedir ajuda
 │   └── integrantes.css          # Estilização da página de Integrantes
-├── 📁 js/                      # Imagens e ícones do projeto
+├── 📁 js/                      # Javascript para validação e interações na plataforma
 |   └── contato.js              # Script de validação do formulário de contato
 |   └── chatbot.js              # Script do chatbot integrado via webchat
 |   └── faq.js                  # Script de interação das perguntas e respostas do FAQ
